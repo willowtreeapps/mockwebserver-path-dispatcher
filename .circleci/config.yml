@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: ./gradlew build
+          command: ./gradlew --stacktrace build
       - run:
           name: Run Tests
           command: ./gradlew check
